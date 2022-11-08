@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9098dd2e-3541-42c1-a963-6fe82fd64f04" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/globant/DeactivateAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/globant/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/globant/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/globant/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/globant/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/globant/LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/globant/LogoutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/globant/Suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/globant/Suite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/globant/DataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/globant/DataBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/globant/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/globant/LoginTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/globant/LogoutTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/globant/LogoutTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/globant/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/globant/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/globant/DataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/globant/DeactivateAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/globant/DeactivateAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/globant/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/globant/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/globant/LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/globant/LogoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/globant/Suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/resources/Suite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/globant/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +74,12 @@
       <recent name="junit.framework.TestCase" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Johana Valencia\Desktop\PROJECTS\JohanaValencia_TestCase_Design_TestNG\src\test\java\resources" />
+      <recent name="C:\Users\Johana Valencia\Desktop\PROJECTS\JohanaValencia_TestCase_Design_TestNG\src\test" />
       <recent name="C:\Users\Johana Valencia\Desktop\PROJECTS\JohanaValencia_TestCase_Design_TestNG" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.globant" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.globant" />

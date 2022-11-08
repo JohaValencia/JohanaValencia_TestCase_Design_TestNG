@@ -10,7 +10,7 @@ public class LogoutTest extends DataBase {
     public void logOut(String email, String password){
     log.info("Click on the user icon in navigation bar");
     log.info("Select Log In option");
-    log.info("Type the required information:  " + email + "and " + password);
+    log.info("Type the required information: {} and {}", email, password);
     log.info("Click on Log In button");
     log.info("Verify if your log In was correct");
     log.info("Click on the user icon in navigation bar");

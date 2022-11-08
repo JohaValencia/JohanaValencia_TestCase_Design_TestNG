@@ -11,7 +11,7 @@ public class DeactivateAccount extends DataBase {
     public void logOut(String email, String password) {
         log.info("Click on the user icon in navigation bar");
         log.info("Select Log In option");
-        log.info("Type the required information:  " + email + "and " + password);
+        log.info("Type the required information: {} and {} ",email, password);
         log.info("Click on Log In button");
         log.info("Click on ESPN Profile option");
         log.info("Choose Delete Account option");
@@ -19,9 +19,9 @@ public class DeactivateAccount extends DataBase {
         log.info("Verify if the account is deactivate");
         log.info("Click on the user icon in navigation bar");
         log.info("Select Log In option");
-        log.info("Type the required information:  " + email + "and " + password);
+        log.info("Type the required information: {} and {} ",email, password);
         log.info("Click on Log In button");
-        log.info("The account " + email + " is not register");
+        log.info("The account {} is not register ", email);
         System.out.println();
     }
 }
