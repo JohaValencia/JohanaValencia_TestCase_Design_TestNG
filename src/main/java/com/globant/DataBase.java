@@ -9,7 +9,7 @@ import org.testng.annotations.DataProvider;
 
 
 public class DataBase {
-protected  static Logger log = LoggerFactory.getLogger(DataBase.class);
+private static final Logger log = LoggerFactory.getLogger(DataBase.class);
 
 @DataProvider (name = "validData")
     public Object [][] getValidData() {
@@ -42,6 +42,7 @@ public void registerUser() {
     System.out.println("Click on View site information button");
     System.out.println("Click on Cookies option");
     System.out.println("Remove cookies");
+    log.debug("prueba");
     System.out.println();
 }
 
