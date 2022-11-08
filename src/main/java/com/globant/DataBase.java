@@ -1,11 +1,8 @@
 package com.globant;
 
-import com.sun.org.slf4j.internal.Logger;
-import com.sun.org.slf4j.internal.LoggerFactory;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.testng.annotations.*;
 
 
 public class DataBase {
@@ -23,29 +20,33 @@ return new Object[][] {{"dog@mail.com", "dog1"}, {"cat@mail.com", "cat1"}, {"rab
 
 @BeforeSuite
     public void startBrowser() {
-    System.out.println("Starting Browser");
+    log.info("Starting Browser");
     System.out.println();
 }
 
 @BeforeTest
 public void registerUser() {
-    System.out.println("Start to https://www.espn.com.co/");
-    System.out.println("Click the user icon");
-    System.out.println("To create a new account, click on Log in option");
-    System.out.println("To login with a existing account, click on Sign up option");
+    log.info("Start to https://www.espn.com.co/");
+    log.info("Click the user icon");
+    log.info("To create a new account, click on Log in option");
+    log.info("To login with a existing account, click on Sign up option");
     System.out.println();
 }
 
 @BeforeMethod
     public void cleanPage () {
-    System.out.println("Start to https://www.espn.com.co/");
-    System.out.println("Click on View site information button");
-    System.out.println("Click on Cookies option");
-    System.out.println("Remove cookies");
-    log.debug("prueba");
+    log.info("Start to https://www.espn.com.co/");
+    log.info("Click on View site information button");
+    log.info("Click on Cookies option");
+    log.info("Remove cookies");
     System.out.println();
 }
 
+@AfterTest
+    public void closeBrowser () {
+    log.info("Browser is closed");
+    System.out.println();
+}
 
 
 }
