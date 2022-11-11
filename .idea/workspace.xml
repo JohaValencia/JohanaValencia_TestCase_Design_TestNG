@@ -6,13 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9098dd2e-3541-42c1-a963-6fe82fd64f04" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/globant/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/globant/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/globant/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/globant/DeactivateAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/globant/DeactivateAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/globant/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/globant/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/globant/LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/globant/LogoutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/globant/Suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/resources/Suite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/globant/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
