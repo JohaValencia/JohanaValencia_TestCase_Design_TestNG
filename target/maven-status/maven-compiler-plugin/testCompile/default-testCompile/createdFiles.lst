@@ -1,1 +1,4 @@
-com\globant\AppTest.class
+com\globant\DataBase.class
+com\globant\DeactivateAccount.class
+com\globant\LogoutTest.class
+com\globant\LoginTest.class
