@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Test suite ESPN">
+    <listeners>
+        <listener class-name="org.espn.utils.Listener"></listener>
+    </listeners>
+    
+    <parameter name="url" value="https://www.espnqa.com/?src=com&amp;_adblock=true&amp;espn=cloud"></parameter>
+    
+    <test name="Test ESPN Page">
+        <classes>
+            <class name="org.espn.tests.LoginTest"></class>
+            <class name="org.espn.tests.LogoutTest"></class>
+            <class name="org.espn.tests.DeactivateAccountTest"></class>
+        </classes>
+    </test>
+</suite>
