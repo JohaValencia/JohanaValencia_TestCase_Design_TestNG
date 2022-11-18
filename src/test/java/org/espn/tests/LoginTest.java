@@ -10,12 +10,10 @@ public class LoginTest extends BaseTest {
     public void runningLogIn() {
         homeESPNPage.clickUserIcon();
         homeESPNPage.clickOnLogInIndicator();
+        homeESPNPage.watchIframe();
         checkThat("ESPN logo is visible", homeESPNPage.logoIsShowing(), is(true));
         checkThat("Log in button is visible", homeESPNPage.logInBtnIsShowing(), is(true));
         checkThat("Sign up button is visible", homeESPNPage.sigUpBtnIsPresent(), is(true));
-        homeESPNPage.typingEmailOnInput(email);
-        homeESPNPage.typingPasswordOnInput(password);
-        homeESPNPage.clickOnLogIn();
     }
 
 }

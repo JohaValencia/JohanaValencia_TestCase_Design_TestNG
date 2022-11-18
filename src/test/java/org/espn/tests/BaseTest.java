@@ -29,6 +29,7 @@ public class BaseTest {
         driver.getDriver().get(url);
         driver.getDriver().manage().window().maximize();
         homeESPNPage = new HomeESPNPage(driver.getDriver());
+        homeESPNPage.closeBanner();
     }
 
     @AfterTest
