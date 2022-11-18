@@ -1,4 +1,6 @@
 package org.espn.tests;
 
-public class DeactivateAccountTest {
+public class DeactivateAccountTest extends BaseTest {
+
+
 }

@@ -14,13 +14,16 @@ public class HomeESPNPage extends BasePage {
     @FindBy(css = ".user.hover a[tref*='/login']")
     private WebElement logInIndicator;
 
+    @FindBy(id = "sideLogin-left-rail")
+    private WebElement loginView;
+
     @FindBy(id = "logo")
     private WebElement logoModal;
 
-    @FindBy(id = "input#InputLoginValue")
+    @FindBy(id = "InputLoginValue")
     private WebElement userNameInput;
 
-    @FindBy(id = "input#InputPassword")
+    @FindBy(id = "InputPassword")
     private WebElement passwordInput;
 
     @FindBy(id = "BtnSubmit")
@@ -47,14 +50,23 @@ public class HomeESPNPage extends BasePage {
     @FindBy(id = "BtnCreateAccount")
     private WebElement signUpButton;
 
+    @FindBy(css = "div.global-user:last-child ul.account-management > li:last-child > a")
+    private WebElement logOutBtn;
+
     @FindBy(css = ".promo-banner-container iframe")
     private WebElement iframeBanner;
 
     @FindBy(css = "section.PromoBanner")
     private WebElement banner;
 
+    @FindBy(css = "li.pillar.watch > a")
+    private WebElement watchLink;
+
     @FindBy(id = "oneid-iframe")
     private WebElement iframe;
+
+    @FindBy(css = "div.global-user:last-child ul.account-management li.display-user")
+    private WebElement welcome;
 
 
     public HomeESPNPage(WebDriver driver) {
@@ -121,8 +133,23 @@ public class HomeESPNPage extends BasePage {
         super.clickElement(this.logInButton);
     }
 
+    public void clickOnLogOut() {
+        super.clickElement(this.logOutBtn);
+    }
+
     public void watchIframe() {
         super.getDriver().switchTo().frame(this.iframe);
     }
+
+    public WatchPage changeToWatchPage() {
+        super.clickElement(this.watchLink);
+        return new WatchPage(getDriver());
+    }
+
+    public String welcomeTextIsVisible() {
+        super.waitForVisibility(this.welcome);
+        return this.welcome.getText();
+    }
+
 
 }

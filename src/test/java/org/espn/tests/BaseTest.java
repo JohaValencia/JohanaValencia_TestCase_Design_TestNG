@@ -16,7 +16,7 @@ public class BaseTest {
 
     private Driver driver;
     protected HomeESPNPage homeESPNPage;
-    protected static String email;
+    protected final String email = "amarillataller@gmail.com";
     protected final String password = "Toña1234$";
 
     @Parameters({"url"})
@@ -46,10 +46,6 @@ public class BaseTest {
         }
     }
 
-    public void setEmail() {
-        int randomValue = (int) (Math.random() * 10000);
-        email = "test.email" + randomValue + "@gmail.com";
-    }
 
     protected void logInSteps() {
         homeESPNPage.clickUserIcon();

@@ -45,6 +45,11 @@ public class WebOperations {
 
     public void waitForPresenceOfElement(String locator) { wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(locator)));}
 
+    public void waitForPresenceOfElements(String locator) { wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(locator)));}
+
+    public void waitForAttributeChange(WebElement element, String attribute, String value) {
+        wait.until(ExpectedConditions.attributeToBe(element, attribute, value));}
+
 
 
 }
