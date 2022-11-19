@@ -10,7 +10,6 @@
     <test name="Test ESPN Page">
         <classes>
             <class name="org.espn.tests.LoginTest"></class>
-            <class name="org.espn.tests.LogoutTest"></class>
             <class name="org.espn.tests.DeactivateAccountTest"></class>
         </classes>
     </test>

@@ -1,5 +1,6 @@
 package org.espn.pages;
 
+import org.espn.tests.DeactivateAccountTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -67,6 +68,10 @@ public class HomeESPNPage extends BasePage {
 
     @FindBy(css = "div.global-user:last-child ul.account-management li.display-user")
     private WebElement welcome;
+
+
+
+
 
 
     public HomeESPNPage(WebDriver driver) {
@@ -146,10 +151,13 @@ public class HomeESPNPage extends BasePage {
         return new WatchPage(getDriver());
     }
 
+
+
     public String welcomeTextIsVisible() {
         super.waitForVisibility(this.welcome);
         return this.welcome.getText();
     }
+
 
 
 }

@@ -1,13 +1,11 @@
 package org.espn.tests;
 
 import org.espn.Driver;
+import org.espn.pages.DeleteAccountModal;
 import org.espn.pages.HomeESPNPage;
 import org.hamcrest.Matcher;
 import org.hamcrest.MatcherAssert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 import reporting.Reporter;
 
 import static java.lang.String.format;
@@ -16,11 +14,13 @@ public class BaseTest {
 
     private Driver driver;
     protected HomeESPNPage homeESPNPage;
-    protected final String email = "amarillataller@gmail.com";
+
+    protected DeleteAccountModal deleteAccountModal;
+    protected final String email = "amarillatalle@gmail.com";
     protected final String password = "Toña1234$";
 
     @Parameters({"url"})
-    @BeforeTest()
+    @BeforeClass
     public void testSetUp(String url) {
         driver = new Driver();
         Reporter.info("Deleting all cookies");
@@ -30,6 +30,7 @@ public class BaseTest {
         driver.getDriver().manage().window().maximize();
         homeESPNPage = new HomeESPNPage(driver.getDriver());
         homeESPNPage.closeBanner();
+        deleteAccountModal = new DeleteAccountModal(driver.getDriver());
     }
 
     @AfterTest
@@ -46,14 +47,4 @@ public class BaseTest {
         }
     }
 
-
-    protected void logInSteps() {
-        homeESPNPage.clickUserIcon();
-        homeESPNPage.clickOnLogIn();
-        homeESPNPage.logoIsShowing();
-        homeESPNPage.sigUpBtnIsPresent();
-        homeESPNPage.typingEmailOnInput(email);
-        homeESPNPage.typingPasswordOnInput(password);
-        homeESPNPage.logInBtnIsShowing();
-    }
 }
