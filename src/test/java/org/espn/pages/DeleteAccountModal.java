@@ -16,8 +16,8 @@ public class DeleteAccountModal extends BasePage {
     @FindBy(id = "AccountDeleteLink")
     private WebElement deleteAccountLinkBox;
 
-    @FindBy(id = "BtnSubmit")
-    private WebElement deleteAccountBtn;
+    @FindBy(id = "BtnCancel")
+    private WebElement keepTheAccount;
 
     public void clickOnEspnProfile() {
         super.clickElement(this.espnProfile);
@@ -25,8 +25,8 @@ public class DeleteAccountModal extends BasePage {
     public void clickOnDeleteAccount() {
         super.clickElement(this.deleteAccountLinkBox);
     }
-    public void clickOnDeleteConfirmation () {
-        super.clickElement(this.deleteAccountBtn);
+    public void clickOnKeepTheAccount () {
+        super.clickElement(this.keepTheAccount);
     }
 
 }

@@ -16,7 +16,7 @@ public class DeactivateAccountTest extends BaseTest {
         deleteAccountModal.clickOnEspnProfile();
         homeESPNPage.watchIframe();
         deleteAccountModal.clickOnDeleteAccount();
-        deleteAccountModal.clickOnDeleteConfirmation();
+        deleteAccountModal.clickOnKeepTheAccount();
 
     }
 }
